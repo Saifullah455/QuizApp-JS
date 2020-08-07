@@ -31,4 +31,4 @@ jobs:
       run: npm install -g surge
       
     - name: Run Surge
-      run: surge ./ quiz-application-JS.surge.sh --token $ {{secrets.Token1}}
+      run: surge ./ quiz-application-deoploy.surge.sh --token ${{secrets.Token}}
