@@ -164,7 +164,7 @@ function count(f) {
     }
     function Score() {
         var result = document.createElement('h2');
-        var show = "Your Result is : " + score + " / 10";
+        var show = "Your Score is : " + score + " / 10";
         result.setAttribute('class', 'res');
         var resText = document.createTextNode(show);
         result.appendChild(resText);
