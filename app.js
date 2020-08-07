@@ -36,7 +36,7 @@ var Question = [ques1, ques2, ques3];
 var counter = 0;
 
 for (var i = 0; i < Question.length; i++) {
-    if (counter === i) {
+    // if (counter === i) {
         var displayArea = document.getElementById("display");
         var q = document.createElement('div');
         q.setAttribute('class', 'q');
@@ -69,7 +69,7 @@ for (var i = 0; i < Question.length; i++) {
         b3.setAttribute('onClick', 'correctAns(this)');
         b4.setAttribute('onClick', 'correctAns(this)');
     }   
-}
+// }
 function correctAns(btn) {
     var count = 0;
     var check = false;
@@ -80,13 +80,13 @@ function correctAns(btn) {
     }
     if (check === true) {
         alert('Your answer is Correct :)');
-        displayArea.innerHTML = "";
+        // displayArea.innerHTML = "";
         // counter++;
         count++;
     }
     else {
         alert('Wrong Answer !');
-        displayArea.innerHTML = "";
+        // displayArea.innerHTML = "";
         // counter++;
     }
     return count;
